@@ -3,16 +3,16 @@ package view;
 import java.util.Scanner;
 
 public class UserInputUtils {
-    private static final Scanner scanner = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static int getIntInput(String prompt) {
         System.out.print(prompt);
-        return scanner.nextInt();
+        return SCANNER.nextInt();
     }
 
     public static String getStringInput(String prompt) {
         System.out.print(prompt);
-        return scanner.nextLine();
+        return SCANNER.nextLine();
     }
 
     public static void println(String prompt) {

@@ -16,14 +16,14 @@ import static view.TaskMenu.taskMenu;
 import static view.UserInputUtils.*;
 
 public class Application {
-    private static final String filePath = "src/ToDo.csv";
+    private static final String FILE_PATH = "src/ToDo.csv";
     private static final Scanner scanner = new Scanner(System.in);
-    private static final int menuCreateTask = 1;
-    private static final int menuListTasks = 2;
-    private static final int menuListTasksBy = 3;
-    private static final int menuSetStatus = 4;
-    private static final int menuDeleteTask = 5;
-    private static final int menuExit = 6;
+    private static final int MENU_CREATE_TASK = 1;
+    private static final int MENU_LIST_TASKS = 2;
+    private static final int MENU_LIST_TASKS_BY = 3;
+    private static final int MENU_SET_STATUS = 4;
+    private static final int MENU_DELETE_TASK = 5;
+    private static final int MENU_EXIT = 6;
 
     public static void main(String[] args) {
         while (true) {
@@ -33,12 +33,12 @@ public class Application {
             scanner.nextLine();
 
             switch (choice) {
-                case menuCreateTask -> createTask();
-                case menuListTasks -> listTasks();
-                case menuListTasksBy -> listTasksBy();
-                case menuSetStatus -> setStatusOfTask();
-                case menuDeleteTask -> deleteTask();
-                case menuExit -> exit();
+                case MENU_CREATE_TASK -> createTask();
+                case MENU_LIST_TASKS -> listTasks();
+                case MENU_LIST_TASKS_BY -> listTasksBy();
+                case MENU_SET_STATUS -> setStatusOfTask();
+                case MENU_DELETE_TASK -> deleteTask();
+                case MENU_EXIT -> exit();
                 default -> {
                     clearConsole();
                     println("Insira um número válido");
@@ -222,7 +222,7 @@ public class Application {
         int doingCount = 0;
         int doneCount = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
             String line;
             int lineNumber = 1;
 

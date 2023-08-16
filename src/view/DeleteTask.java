@@ -14,7 +14,7 @@ import static view.UserInputUtils.println;
 public class DeleteTask {
     public static void deleteTask(int taskId) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(TaskController.filePath));
+            BufferedReader reader = new BufferedReader(new FileReader(TaskController.FILE_PATH));
             StringBuilder content = new StringBuilder();
             String line;
             int lineNumber = 1;

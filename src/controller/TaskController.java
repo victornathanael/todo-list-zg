@@ -12,11 +12,11 @@ import static controller.ConsoleUtils.clearConsole;
 import static view.UserInputUtils.println;
 
 public class TaskController {
-    public static final String filePath = "src/ToDo.csv";
+    public static final String FILE_PATH = "src/ToDo.csv";
 
     public static void setStatusOfTask(int taskId) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH));
             StringBuilder content = new StringBuilder();
             String line;
             int lineNumber = 1;
@@ -72,7 +72,7 @@ public class TaskController {
     }
 
     public static void updateFileContent(StringBuilder content) throws IOException {
-        FileWriter writer = new FileWriter(TaskController.filePath);
+        FileWriter writer = new FileWriter(FILE_PATH);
         writer.write(content.toString());
         writer.close();
     }

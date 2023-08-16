@@ -10,7 +10,7 @@ import static view.UserInputUtils.println;
 
 public class ListTasks {
     public static void listTasks() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(TaskController.filePath))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(TaskController.FILE_PATH))) {
             String line;
             int lineNumber = 1;
             while ((line = reader.readLine()) != null) {
