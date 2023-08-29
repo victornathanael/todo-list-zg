@@ -1,6 +1,13 @@
 # 📋 To-Do List
 
-Bem-vindo ao To-Do List! Esta é uma aplicação simples desenvolvida em Java e baseada em console que ajuda você a gerenciar suas tarefas de forma eficaz. Você pode adicionar, listar, atualizar e excluir tarefas com várias funcionalidades, como definir seu status, visualizá-las por categoria, prioridade ou status e muito mais.
+Bem-vindo ao To-Do List! Esta é uma aplicação desenvolvida em Java e Javascript e que ajudará você a gerenciar suas tarefas de forma eficaz.
+
+![image](https://github.com/victornathanael/todo-list-zg/assets/99601659/c6cac54c-12ae-41db-8758-2dff93165539)
+
+
+**OBS:** No momento a aplicação possui backend e frontend independentes mas em breve serão conectados entre si. O frontend possui quase todas as funcionalidades presentes no backend, com exceção da listagem por categoria e prioriadade. 
+
+Abaixo descrevo por completo os pontos principais já implementados no backend e disponiveis via console.
 
 ## ✨ Funcionalidades 
 
