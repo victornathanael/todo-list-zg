@@ -53,7 +53,7 @@ javac -d bin -cp src src/*.java
 4. Execute o aplicativo:
 
 ```
-java -cp bin Application
+java -cp bin App
 ```
 
 ## 💻 Uso 
