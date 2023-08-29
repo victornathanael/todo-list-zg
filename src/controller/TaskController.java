@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static controller.ConsoleUtils.clearConsole;
+import static utils.ConsoleUtils.clearConsole;
 import static view.UserInputUtils.println;
 
 public class TaskController {

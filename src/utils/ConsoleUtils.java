@@ -1,4 +1,4 @@
-package controller;
+package utils;
 
 public class ConsoleUtils {
     public static void clearConsole() {

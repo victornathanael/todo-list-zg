@@ -10,12 +10,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static controller.ConsoleUtils.clearConsole;
+import static utils.ConsoleUtils.clearConsole;
 import static model.SaveTasks.save;
 import static view.TaskMenu.taskMenu;
 import static view.UserInputUtils.*;
 
-public class Application {
+public class App {
     private static final String FILE_PATH = "src/ToDo.csv";
     private static final Scanner scanner = new Scanner(System.in);
     private static final int MENU_CREATE_TASK = 1;

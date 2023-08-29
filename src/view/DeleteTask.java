@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-import static controller.ConsoleUtils.clearConsole;
+import static utils.ConsoleUtils.clearConsole;
 import static controller.TaskController.handleException;
 import static controller.TaskController.updateFileContent;
 import static view.UserInputUtils.println;
