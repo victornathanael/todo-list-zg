@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo-list</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="modal-container">
+    <div id="modal-fade"></div>
+    <div id="modal">
+        <h2>Adicionar nova categoria</h2>
+        <form id="modal-form">
+            <div id="input-modal-container">
+                <img id="close-modal" src="../assets/img/close-icon.png" alt="close icon to close modal">
+                <label for="category-modal"></label>
+                <input type="text" id="category-modal" placeholder="nome da categoria">
+            </div>
+            <button type="button" id="modal-button" disabled>Criar categoria</button>
+        </form>
+    </div>
+</div>
+<header>
+    <p>Todo List</p>
+</header>
+<main>
+    <form id="form">
+        <div id="form-container">
+            <div class="name-container">
+                <label for="name">Nome: </label>
+                <input id="name" type="text">
+            </div>
+
+            <div class="description-container">
+                <label for="description">Descrição: </label>
+                <input id="description" type="text">
+            </div>
+
+            <div class="date-container">
+                <label for="date">Data de término: </label>
+                <input id="date" type="date">
+            </div>
+
+            <div class="priority-container">
+                <label for="priority">Prioridade: </label>
+                <select id="priority">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="category-container">
+                <label for="category">Categoria: </label>
+                <div id="add-container">
+                    <select id="category">
+                        <option value="select" disabled>Adicione uma categoria</option>
+                    </select>
+                    <img id="add-category" src="../assets/img/add-icon.png" alt="plus icon to add new category">
+                </div>
+            </div>
+
+            <div class="status-container">
+                <label for="status">Status : </label>
+                <select id="status">
+                    <option value="todo">todo</option>
+                    <option value="doing">doing</option>
+                    <option value="done">done</option>
+                </select>
+            </div>
+
+        </div>
+        <div id="button-container">
+            <button type="button" id="create-task" disabled>Criar Tarefa</button>
+            <button type="button" id="list-tasks" disabled>Listar Tarefas</button>
+        </div>
+    </form>
+
+    <div id="list-of-task">
+        <div id="filter-container">
+            <label for="filter-status">Filtrar tarefas por </label>
+            <select id="filter-status">
+                <option value="selecione" disabled selected></option>
+                <option value="all">all</option>
+                <option value="todo">todo</option>
+                <option value="doing">doing</option>
+                <option value="done">done</option>
+            </select>
+        </div>
+        <div id="task-container"></div>
+    </div>
+</main>
+<script src="../js/index.js"></script>
+</body>
+
+</html>
